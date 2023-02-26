@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 65%;
+}
+body {
+  background-color: #000100;
+color: #e5f0ff;
+font-family: 'Special Elite', cursive;
+font-size: 1.5rem;
+letter-spacing: .15rem;
+}
+li {
+  color: #035fa5;
+}
+
+a {
+    color: #035fa5;
+}
+
+a:hover {
+  background-color: #e5f0ff
+}
+
+h2 {
+  font-family: 'Road Rage', cursive;
+  font-size: 5rem;
+  letter-spacing: .75rem;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000100;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  max-width: 10vw;
+  max-height: 10vw;
+  margin: auto;
+}
+
+.logo {
+  width: 10vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+  }
+}
+
+nav {
+  font-weight: 800;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:first-of-type {
+  margin: 140px auto 0 auto;
+}
+
+@media (max-width: 450px) {
+  .container:first-of-type {
+    margin: 500px auto 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .container:first-of-type {
+    margin: 150px auto 0 auto;
+  }
+}
+
+hr.divider {
+  border: 2px dotted #035fa5;
+  border-radius: 10px;  
+}
+
+video {
+  width: 100%;
+  max-width: 960px;
+  height: 75%;
+  max-height: 540px;
+  padding: 12px 20px 12px;
+  margin: 8px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #e5f0ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit {
+  margin: 12px auto;
+  background-color: #035fa5;
+  color: #e5f0ff;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+footer {
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
